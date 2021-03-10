@@ -1,0 +1,41 @@
+server:
+  port: 8000
+
+keycloak:
+  realm: ${SSO_REALM_NAME:example}
+  auth-server-url: ${SSO_AUTH_URL:http://localhost:8180/auth}
+  ssl-required: external
+  resource: ${SSO_CLIENT_ID:keycloak-springboot-microservice}
+  use-resource-role-mappings: true
+  bearer-only: true
+
+##  enabled: false
+##
+### example mapping all with asterix
+###  securityConstraints[0]:
+###    authRoles[0]: admin
+###    securityCollections[0]:
+###      name: admin
+###      patterns[0]: /test/*
+##
+##  ## 100% para configuracao (v1)
+
+#  securityConstraints[0]:
+#    authRoles[0]: admin
+#    securityCollections[0]:
+#      name: admin stuff
+#      patterns[0]: /test/admin
+#      patterns[1]: /test/all-user
+#
+#  securityConstraints[1]:
+#    authRoles[0]: user
+#    securityCollections[0]:
+#      name: user stuff
+#      patterns[0]: /test/user
+#      patterns[1]: /test/all-user
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
