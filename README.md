@@ -83,7 +83,7 @@ $JBOSS_HOME/bin/jboss-cli.sh "patch apply /path/to/downloaded-patch.zip"
    2. https://github.com/redhat-developer/redhat-sso-quickstarts/tree/7.4.x
    3. https://github.com/jovemfelix/rhsso-workshop-march-2021
 4. Maven [3.6.x](https://maven.apache.org/download.cgi) + JDK [1.8](https://developers.redhat.com/content-gateway/file/java-1.8.0-openjdk-1.8.0.282-1.b08.dev.redhat.windows.x86_64.zip)
-5. POSTMAN - https://www.postman.com/downloads/
+5. POSTMAN -https://portapps.io/app/postman-portable/
 
 
 
