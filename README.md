@@ -74,14 +74,15 @@ $JBOSS_HOME/bin/jboss-cli.sh "patch apply /path/to/downloaded-patch.zip"
 
 
 
+# Requisitos
+
+1. Fazer o Download do Produto [RH-SSO](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.rhsso)
+2. Baixar os Seguintes exemplos:
+   1. https://github.com/keycloak/keycloak/
+   2. https://github.com/keycloak/keycloak-quickstarts
+3. Maven 3x + JDK 1.8
+
 ## Referências
-
-* Fazer o Download do Produto [RH-SSO](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.rhsso)
-
-* Baixar os Seguintes exemplos:
-
-  * https://github.com/keycloak/keycloak/
-  * https://github.com/keycloak/keycloak-quickstarts
 
 * Red Hat Single Sign-On **Component** [Details](https://access.redhat.com/articles/2342881)
 
