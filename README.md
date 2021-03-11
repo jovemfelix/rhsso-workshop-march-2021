@@ -73,7 +73,7 @@ $JBOSS_HOME/bin/jboss-cli.sh "patch apply /path/to/downloaded-patch.zip"
 
 * [How to secure microservices with Red Hat Single Sign-On, Fuse, and 3scale](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.rhsso&version=7.3&productChanged=yes)
 
-* How to secure your Microservices with Keycloak - [Thomas Darimont](https://www.youtube.com/watch?v=FyVHNJNriUQ&t=2567s)
+* How to secure your Microservices with Keycloak - [Thomas Darimont](https://www.youtube.com/watch?v=FyVHNJNriUQ&t=2567s)
 
 * Mac [Client](https://gist.github.com/jovemfelix/2c24e07c10ae97be9635f12cd4862e90) of JWT.io
 
