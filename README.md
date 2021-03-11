@@ -76,11 +76,16 @@ $JBOSS_HOME/bin/jboss-cli.sh "patch apply /path/to/downloaded-patch.zip"
 
 ## Referências
 
+* Fazer o Download do Produto [RH-SSO](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.rhsso)
+
+* Baixar os Seguintes exemplos:
+
+  * https://github.com/keycloak/keycloak/
+  * https://github.com/keycloak/keycloak-quickstarts
+
 * Red Hat Single Sign-On **Component** [Details](https://access.redhat.com/articles/2342881)
 
 * Red Hat Single Sign-On **Supported** [Configurations](https://access.redhat.com/articles/2342861)
-
-* Download do [RH-SSO](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.rhsso)
 
 * [How to secure microservices with Red Hat Single Sign-On, Fuse, and 3scale](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.rhsso&version=7.3&productChanged=yes)
 
