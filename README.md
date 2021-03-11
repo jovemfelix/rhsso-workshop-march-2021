@@ -76,13 +76,14 @@ $JBOSS_HOME/bin/jboss-cli.sh "patch apply /path/to/downloaded-patch.zip"
 
 # Requisitos
 
-1. Fazer o Download do Produto [RH-SSO](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.rhsso)
-2. Baixar os Seguintes exemplos:
+1. Ter uma conta Developer na Red Hat - http://developers.redhat.com/ (para registrar - ir até o final da página e buscar pelo botão **JOIN Developer**)
+2. Fazer o Download do Produto [RH-SSO](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.rhsso)
+3. Baixar os Seguintes exemplos:
    1. https://github.com/keycloak/keycloak/releases/tag/9.0.3
    2. https://github.com/redhat-developer/redhat-sso-quickstarts/tree/7.4.x
    3. https://github.com/jovemfelix/rhsso-workshop-march-2021
-3. Maven [3.6.x](https://maven.apache.org/download.cgi) + JDK [1.8](https://developers.redhat.com/content-gateway/file/java-1.8.0-openjdk-1.8.0.282-1.b08.dev.redhat.windows.x86_64.zip)
-4. POSTMAN - https://www.postman.com/downloads/
+4. Maven [3.6.x](https://maven.apache.org/download.cgi) + JDK [1.8](https://developers.redhat.com/content-gateway/file/java-1.8.0-openjdk-1.8.0.282-1.b08.dev.redhat.windows.x86_64.zip)
+5. POSTMAN - https://www.postman.com/downloads/
 
 
 
