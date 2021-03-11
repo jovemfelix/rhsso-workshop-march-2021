@@ -63,6 +63,17 @@ $JBOSS_HOME/bin/jboss-cli.sh "patch apply /path/to/downloaded-patch.zip"
 
 
 
+# Work from Home
+
+1. Colocar para funcionar os exemplos básicos
+   1. `js-console`
+   2. `keycloak-springboot-microservice`
+   3. `keycloak-custom-theme`
+2. Alterar o projeto `keycloak-custom-theme` para usar o LOGIN do `springio19` [link](https://github.com/jovemfelix/keycloak-docker-demo/tree/master/idm-system/keycloak/themes/springio19/)
+3. Alterar o fluxo de Autenticação de login para solicitar a autenticação usando **OTP** e validar o login com o mesmo!
+
+
+
 ## Referências
 
 * Red Hat Single Sign-On **Component** [Details](https://access.redhat.com/articles/2342881)
