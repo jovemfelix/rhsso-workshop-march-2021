@@ -81,7 +81,8 @@ $JBOSS_HOME/bin/jboss-cli.sh "patch apply /path/to/downloaded-patch.zip"
    1. https://github.com/keycloak/keycloak/releases/tag/9.0.3
    2. https://github.com/redhat-developer/redhat-sso-quickstarts/tree/7.4.x
    3. https://github.com/jovemfelix/rhsso-workshop-march-2021
-3. Maven 3x + JDK 1.8
+3. Maven [3.6.x](https://maven.apache.org/download.cgi) + JDK 1.8
+4. POSTMAN - https://www.postman.com/downloads/
 
 
 
