@@ -35,6 +35,14 @@ KEYCLOAK_ENABLED=true && mvn clean spring-boot:run
 
 
 
+## Undeploy
+
+```shell
+mvn -Denforcer.skip=true -Dmaven.test.skip=true -Dwildfly.port=10090 -Dorg.slf4j.simpleLogger.defaultLogLevel=WARN wildfly:undeploy 
+```
+
+
+
 # Comandos
 
 ## Iniciar Servidor
@@ -77,19 +85,41 @@ $JBOSS_HOME/bin/jboss-cli.sh "patch apply /path/to/downloaded-patch.zip"
 # Requisitos
 
 1. Ter uma conta Developer na Red Hat - http://developers.redhat.com/ (para registrar - ir até o final da página e buscar pelo botão **JOIN Developer**)
-2. Fazer o Download do Produto [RH-SSO](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.rhsso)
-3. Baixar os Seguintes exemplos:
+2. Criar uma **pasta de trabalho** (ex: `c:\sso`)
+3. Fazer o Download do Produto [RH-SSO](https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=core.service.rhsso)
+4. Baixar os Seguintes exemplos:
    1. https://github.com/keycloak/keycloak/releases/tag/9.0.3
    2. https://github.com/redhat-developer/redhat-sso-quickstarts/tree/7.4.x
    3. https://github.com/jovemfelix/rhsso-workshop-march-2021
-4. Maven [3.6.x](https://maven.apache.org/download.cgi) + JDK [1.8](https://developers.redhat.com/content-gateway/file/java-1.8.0-openjdk-1.8.0.282-1.b08.dev.redhat.windows.x86_64.zip)
-5. POSTMAN - https://www.postman.com/downloads/
+5. Maven [3.6.x](https://maven.apache.org/download.cgi) + JDK [1.8](https://developers.redhat.com/content-gateway/file/java-1.8.0-openjdk-1.8.0.282-1.b08.dev.redhat.windows.x86_64.zip)
+6. POSTMAN - https://www.postman.com/downloads/
 
 
 
 ## Dicas
 
-1. Build dos projetos usando o Maven  [settings.xml](https://gist.github.com/jovemfelix/53730f818c85c4fb506aace314573461)
+1. Configurar o Maven  `settings.xml`
+
+   1. Baixar o referido arquivo  [settings.xml](https://gist.github.com/jovemfelix/53730f818c85c4fb506aace314573461)
+   2. Renomear aquivo baixado de `maven-settings-redhat.xml`  para  `settings.xml` 
+   3. Copiar o arquivo  `settings.xml`  para a pasta do usuário $HOME/.m2/
+
+2. Criar um **Realm** com o nome `cielo`
+
+3. Criar um **Client** *publico* para o projeto `js-console` 
+
+   1. Copiar o arquivo `keycloak.json` obtido da aba instalation
+
+4. Para colocar para funcionar o `js-console`
+
+   1. criar na **pasta de trabalho** a pasta `handson`
+   2. entrar na pasta `handson`
+   3. copiar para o `pom.xml` doi projeto `$REDHAT_SSO_QUICKSTARTS/pom.xml`
+   4. copiar o projeto do projeto `$KEYCLOAK-9.0.3/examples/js-console`
+
+5. Build dos projetos
+
+   
 
 
 
